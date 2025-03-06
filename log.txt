@@ -6,3 +6,61 @@ Alteraçao feita na branch nova-edicao
 
 Alteraçao diferente feita na branch main.
 main
+81  git config --global user.name "Z4rdion"
+   82  git config --global user.email "miguelmedeiros2004@gmail.com"
+   83  git config --global --list
+   84  mkdir git-treino
+   85  cd git-treino
+   86  git init
+   87  git remote add origin https//github.com/Z4rdion/git-treino.git
+   88  git remote -v
+   89  echo "# Repositório Git Treino" > README.md
+   90  git add .
+   91  git commit -m "Primeiro commit"
+   92  git push -u origin main
+   93  git branch -M main
+   94  git push -u origin main
+   95  git clone https://github.com/Z4rdion/labpro.git
+   96  cd labpro
+   97  echo "Este arquivo de log." > log.txt
+   98  git add log.txt
+   99  git commit -m "adcionando o arquivo log.txt"
+  100  git push origin main
+  101  git branch -M main
+  102  git push -u origin main
+  103  echo "Nova linha adicionada ao log." >> log.txt
+  104  git status
+  105  git add log.txt
+  106  git commit -m "Atualizando o log.txt com nova linha"
+  107  git push origin main
+  108  git checkout -b nova-feature
+  109  echo "Alteraçao feita na brach nova-feature." >> log.txt
+  110  git add log.txt
+  111  git commit -m "Alteraçao no log.txt na branch nova.feature"
+  112  git push origin nova-feature
+  
+===================Opcional============================================
+  113  git checkout main
+  114  git pull origin main
+  115  git checkout -b nova-edicao
+  116  echo "Alteraçao feita na branch nova-edicao" >> log.txt
+  117  git add log.txt
+  118  git commit -m "Alteraçao no log.txt na branch nova-edicao"
+  119  git push origin nova-edicao
+  120  git checkout main
+  121  ehco "Alteraçao diferente feita na branch main." >> log.txt
+  122  echo "Alteraçao diferente feita na branch main." >> log.txt
+  123  git commit -m "Alteraçao no log.txt na branch main"
+  124  git merge nova-edicao
+  125  git add log.txt
+  126  git commit -m "Resolvendo conflito no log.txt"
+  127  git push origin main
+  128  git add log.txt
+  129  git commit -m "Dar Push no log.txt"
+  130  git commit -m "Dar Push no log.txt" push
+  131  git checkout nova-edicao
+  132  git pull origin main
+  133  git add log.txt
+  134  git commit -m "Resolvendo conflito entre main e nova-edicao"
+  135  git push origin nova-edicao
+  136  history
