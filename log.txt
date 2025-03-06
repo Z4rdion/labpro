@@ -1,1 +1,2 @@
 Este arquivo de log.
+Nova linha adicionada ao log.
