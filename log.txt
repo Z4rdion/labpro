@@ -1,3 +1,4 @@
 Este arquivo de log.
 Nova linha adicionada ao log.
 Alteraçao feita na brach nova-feature.
+Alteraçao feita na branch nova-edicao
